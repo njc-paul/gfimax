@@ -4,6 +4,7 @@
 
 strSaveTo = "C:\NJCInst\Download"
 strURL = "http://www.domain.com/downloads/File.exe"
+strExecute = "File.exe"
 
 
 '------------------------------------------------------------------------------
@@ -13,7 +14,13 @@ WScript.Echo "Downloading to: " & strSaveTo
 HTTPDownload strURL, strFile
 Set oCmd = CreateObject("Wscript.Shell")
 
-
+'------------------------------------------------------------------------------
+' Execute command
+'------------------------------------------------------------------------------
+commandLine = strSaveTo & "\" & strExecute
+WScript.Echo "Executing: " & strExecute
+oCmd.Run commandLine, 0, True
+ 
 
 '------------------------------------------------------------------------------
 ' subroutine to call for downloading file
