@@ -17,3 +17,4 @@ powercfg.exe -change -standby-timeout-ac 0
 GOTO end
  
 :end
+
