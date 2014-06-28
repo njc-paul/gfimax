@@ -14,6 +14,7 @@ WScript.Echo "Downloading to: " & strSaveTo
 HTTPDownload strURL, strFile
 Set oCmd = CreateObject("Wscript.Shell")
 
+
 '------------------------------------------------------------------------------
 ' Execute command
 '------------------------------------------------------------------------------
