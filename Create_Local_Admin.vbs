@@ -42,7 +42,6 @@ WScript.sleep 600
 objGroup.Add(objUser.ADsPath)
  
 ' Error -2147023518 is "The specified account name is already
- 
 ' a member of the local group."
  
  
